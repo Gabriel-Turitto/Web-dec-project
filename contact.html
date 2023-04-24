@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <meta charset="utf-8">
+	    <title></title>
+	    <link rel="icon" href="">
+	    <link rel='stylesheet' href='css/McC.css'>
+		<!--
+			Author:			
+			Class:			CSCI 1710
+			Date:			11/22/2015
+			Assignment:		
+			Purpose:		A little more PHP
+		-->
+    </head>
+    <body>
+        <div class="wrapper">
+            <section>
+                <h1>Order</h1>
+                <form style="border: 1px solid black; padding:10px; width:400px; margin:0 auto;" action="lab11-process.php" method="get">
+                  First name:&nbsp;&nbsp;
+                  <input type="text" name="firstname" placeholder="First Name">
+                  <br><br />
+                  Last name:&nbsp;&nbsp;
+                  <input type="text" name="lastname" placeholder="Last Name"><br /><br /><br />
+                  Email:&nbsp;&nbsp;&nbsp;
+                  <input type="email" name="email" placeholder="Email Address"><br /><br /><br />
+                  Phone:&nbsp;&nbsp;&nbsp;
+                  <input type="tel" name="phone" placeholder="Telephone"><br /><br /><br />
+                  
+                  Desired Description:<br />
+                  <textarea name="comments" rows="10" cols="30" placeholder="Please add your comments"></textarea><br /><br />
+                  <input type="submit" value="Submit">
+                  <input type="reset" value="Reset">
+                </form>
+            </section>
+            <?php include 'footer.php';?>
+        </div>
+        <?php include 'w3c.php';?>
+    </body>
+    
+</html>

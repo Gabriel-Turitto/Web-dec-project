@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <meta charset="utf-8">
+        <title>Jack's PHP Include</title>
+        <link rel="icon" href="images/php.php">
+        <link rel='stylesheet' href='css/McC.css'>
+            <!--
+                Author:			Jack Ramsey 
+                Class:			CSCI 1710
+                Date:			11/22/2015
+                Assignment:		Lab 10 
+                Purpose:		A little more PHP
+            -->
+            <title>My Website</title>
+	<style>
+		#header {
+			width: 90%;
+			height: 300px;
+			padding: 50px;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+		}
+        #header-text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #fff;
+			font-size: 24px;
+			font-weight: bold;
+			text-align: center;
+			text-shadow: 2px 2px #000;
+            background-color: white;
+            padding: 10px;
+		}
+	</style>
+	<script>
+		var images = ["image1.jpg", "image2.jpg", "image3.jpg, "]; 
+		var currentIndex = 0; 
+
+		function changeImage() {
+			var header = document.getElementById("header"); // get the header element
+			header.style.backgroundImage = "url('images/" + images[currentIndex] + "')"; // set the background image
+			currentIndex++; 
+			if (currentIndex >= images.length) {
+				currentIndex = 0;
+			}
+			setTimeout(changeImage, 6000); //after 6 seconds
+		}
+	</script>
+</head>
+<body onload="changeImage()">
+    
+	<header id="header"></header>
+    <div id="header-text">Welcome to Spoonfull of Sugar.</div>
+	<nav>
+		<div>
+			<a href="mission.php">What We're About</a>
+			<a href="products.php">Products</a>
+		
+		
+			<a href="contact.html">Online Order</a>
+			<a href="manage.php">Management</a>
+		</div>
+	</nav>	
+	    <section>
+		    <h1> Spoonfull's Misson</h1>
+		    <article>
+			    <p>
+				    <img class="l" src="image5.jpg" alt="image placeholder" />
+			    </p>
+			    <p></p>
+			    <p></p>
+			    <p>
+				    <img class="r" src="image4.jpg" alt="image placeholder" />
+			    </p>
+			    <p></p>	
+		    </article>
+	    </section>
+        <div id="gb-social-media-icons"><ul><li><a class="gb-social-media-icon facebook" target="_blank" href="https://www.facebook.com/ringgoldsd" aria-label="Facebook - Opens a new window"><span></span></a></li><li><a class="gb-social-media-icon twitter" target="_blank" href="https://twitter.com/rsdrams" aria-label="Twitter - Opens a new window"><span></span></a></li><li><a class="gb-social-media-icon instagram" target="_blank" href="https://www.instagram.com/rsdrams/" aria-label="Instagram - Opens a new window"><span></span></a></li></ul></div>        
+    <?php include 'footer.php';?>
+    </div>
+        <?php include 'w3c.php';?>
+    </html>
