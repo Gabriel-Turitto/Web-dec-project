@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>McCall's Bakery Menu</title>
+    <meta name="author" content="Gianna, Gabriel, Maddux, Kyah">
+    <meta name="description" content="CSCI 1210 Project">
+    <meta name="keywords" content="CSCI 1210, web, design, bakery">
+    <link rel="stylesheet" href="css/McC.css">
+    <nav>
+        <div>
+            <a href="Aboutme.html">What We're About</a>
+            <a href="Menu.html">Menu</a>
+            <a href="Catering.html">Catering</a>
+            <a href="contact.php?submit=true">Online Order</a>
+            <a href="manage.html">Management</a>
+
+        </div>
+    </nav>	
+    <style>
+        body {
+            background-color: #F7E1D7;
+            font-family: sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        
+        h1 u {
+            text-decoration: none;
+            color: #D2655C;
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-top: 0.5em;
+        }
+        
+        .leftContainer, .rightContainer, .middleContainer {
+            display: inline-block;
+            vertical-align: top;
+            width: 30%;
+            margin: 2%;
+            padding: 1%;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+        }
+        
+        .leftContainer h1 {
+            color: #D2655C;
+        }
+        
+        .rightContainer h1.top {
+            margin-top: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .leftContainer, .rightContainer, .middleContainer {
+                width: 90%;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="leftContainer">
+            <h1><u>Cupcakes</u></h1>
+            <p>$3 each, $36 per dozen</p>
+        </div>
+        <div class="rightContainer">
+            <h1 class="top"><u>Creme Puffs</u></h1>
+            <p>$1.25 each, $15 per dozen</p>
+        </div>
+        <div class="middleContainer">
+            <h1><u>Chocolate Chip Cookies</u></h1>
+            <p>$1.50 each, $18 per dozen</p>
+        </div>
+        <div class="rightContainer">
+            <h1><u>Macarons</u></h1>
+            <p>$2 each, $24 per dozen</p>
+        </div>
+        <div class="leftContainer">
+            <h1><u>Thumbprint Cookies</u></h1>
+            <p>$5 per dozen</p>
+        </div>
+    </body>
+    <footer>
+        <h1>Contact</h1>
+        <p>Phone: 423-777-0022</p>
+        <a href="https://www.instagram.com/spoonfulosugarr/"><img src="Images/insta2.jpg" alt="Instagram"></a>
+    </footer>
+    </html>
